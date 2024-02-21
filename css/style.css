@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Seven Segment', sans-serif;
-}
-
 .container{
     width: 300px;
     margin: 100px auto;
@@ -20,9 +16,37 @@ body{
 }
 
 .display{
+    font-family: 'Seven Segment', sans-serif;
     background-color: black;
     color: #09cf97;
     padding: 20px;
     font-size: 50px;
     text-align: end;
 }
+
+.flex-horizontal{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    background-color: #cfcfcf;
+    
+}
+
+.numbers{
+    margin: 5px;
+    width: calc(100% / 3 - 10px);
+    background-color: #cececc;
+    border-radius: 10px;
+    padding: 15px 0;
+}
+
+.special{
+    flex-grow: 1;
+}
+
+.flex-vertical{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
